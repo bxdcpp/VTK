@@ -112,7 +112,7 @@
 //	return 0;
 //}
 
-#if 0
+#if 1
 
 /*=========================================================================
 
@@ -501,7 +501,7 @@ int main(int argc, char* argv[])
 
 int main(int argc, char* argv[])
 {
-#if 0
+#if 1
     vtkRenderer* renderer = vtkRenderer::New();
     vtkRenderWindow* renWin = vtkRenderWindow::New();
     renWin->AddRenderer(renderer);
@@ -600,7 +600,7 @@ int main(int argc, char* argv[])
 }
 #endif
 
-
+#if 0
 #include "vtkRenderer.h"
 #include "vtkRenderWindow.h"
 #include "vtkRenderWindowInteractor.h"
@@ -659,3 +659,4 @@ int main(int argc, char* argv[])
     actor->Delete();
 }
 
+#endif

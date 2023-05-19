@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.3 FATAL_ERROR)
 
 project(AngleWidget)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../../../bin)
+set(VTK_DIR S:/VTK-build)
+set(ITK_DIR S:/ITK-build)
+
 find_package(VTK COMPONENTS 
   vtkCommonColor
   vtkCommonCore
@@ -16,9 +20,6 @@ find_package(VTK COMPONENTS
   vtkRenderingOpenGL2
   QUIET
 )
-
-
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
 if (NOT VTK_FOUND)
   message("Skipping AngleWidget: ${VTK_NOT_FOUND_MESSAGE}")
